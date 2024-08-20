@@ -1,0 +1,11 @@
+@mixin sizing($property, $min, $max, $orientation: width) {
+    #{$property}: #{$min}px;
+
+    @if $orientation == width {
+        #{$property}: calc((1 / (1310 - 480)) * (#{$max} - #{$min}) * (100vw - 480px) + #{$min}px);
+    }
+
+    @else if $orientation == height {
+        #{$property}: calc((1 / (1100 - 640)) * (#{$max} - #{$min}) * (100vh - 640px) + #{$min}px);
+    }
+}

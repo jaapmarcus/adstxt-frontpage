@@ -1,0 +1,32 @@
+.button {
+	display: inline-flex;
+	@include sizing('font-size', 16, 17);
+	font-weight: $font-weight-bold;
+	color: $color-primary;
+	padding: .65em 1.5em;
+	border-radius: 100px;
+	background: $color-secondary;
+	text-decoration: none;
+	overflow: hidden;
+	transition: background .3s;
+
+	@media (min-width: $screen-md) {
+		padding: .65em 2em;
+	}
+
+	&:hover {
+		background: darken($color-secondary, 15%);
+		transition: background .3s;
+	}
+
+	&--bordered {
+		color: #fff;
+		background: transparent;
+		box-shadow: inset 0 0 0 1px #fff;
+
+		&:hover {
+			background: rgba(#fff, .15);
+			transition: background .3s;
+		}
+	}
+}

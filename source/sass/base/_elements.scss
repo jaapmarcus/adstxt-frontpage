@@ -1,0 +1,43 @@
+html {
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Syne', sans-serif;
+	font-weight: $font-weight-regular;
+	font-size: 17px;
+	line-height: 1.8;
+	background: $color-body;
+	color: #fff;
+	min-height: 100vh;
+	min-height: 100svh;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+figure {
+	margin: 0;
+}
+
+strong {
+	font-weight: $font-weight-bold;
+}
+
+a {
+	color: currentColor;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}

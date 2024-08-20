@@ -1,0 +1,23 @@
+.text {
+
+	p:first-of-type {
+		margin-top: 0;
+	}
+	p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	+ .button-row {
+		margin-top: 2em;
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+	&--large {
+		* {
+			@include sizing('font-size', 18, 20);
+		}
+	}
+}

@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1;
+	letter-spacing: -0.4px;
+	font-weight: $font-weight-bold;
+	margin: 0 0 1em 0;
+}
+
+h1 {
+	@include sizing('font-size', 40, 60);
+}
+
+h2 {
+	@include sizing('font-size', 30, 40);
+}
+
+h3,
+h4 {
+	@include sizing('font-size', 20, 25);
+}
+
+h5,
+h6 {
+	@include sizing('font-size', 18, 20);
+}

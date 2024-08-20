@@ -1,0 +1,8 @@
+.section {
+	margin: 4em 0;
+	overflow: hidden;
+
+	@media (min-width: $screen-xl) {
+		margin: 10em 0;
+	}
+}

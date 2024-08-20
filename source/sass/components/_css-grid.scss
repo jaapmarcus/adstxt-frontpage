@@ -1,0 +1,87 @@
+.css-grid {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(auto-fill, auto);
+
+	@media (min-width: $screen-md) {
+		grid-gap: 40px;
+	}
+
+	&--top {
+		align-items: flex-start;
+	}
+
+	&--center {
+		align-items: center;
+	}
+
+	&--bottom {
+		align-items: flex-end;
+	}
+
+	&__col {
+		grid-column: span 12;
+
+		&--12 {
+			@media (min-width: $screen-md) {
+				grid-column: span 12;
+			}
+		}
+		&--11 {
+			@media (min-width: $screen-md) {
+				grid-column: span 11;
+			}
+		}
+		&--10 {
+			@media (min-width: $screen-md) {
+				grid-column: span 10;
+			}
+		}
+		&--9 {
+			@media (min-width: $screen-md) {
+				grid-column: span 9;
+			}
+		}
+		&--8 {
+			@media (min-width: $screen-md) {
+				grid-column: span 8;
+			}
+		}
+		&--7 {
+			@media (min-width: $screen-md) {
+				grid-column: span 7;
+			}
+		}
+		&--6 {
+			@media (min-width: $screen-md) {
+				grid-column: span 6;
+			}
+		}
+		&--5 {
+			@media (min-width: $screen-md) {
+				grid-column: span 5;
+			}
+		}
+		&--4 {
+			@media (min-width: $screen-md) {
+				grid-column: span 4;
+			}
+		}
+		&--3 {
+			@media (min-width: $screen-md) {
+				grid-column: span 3;
+			}
+		}
+		&--2 {
+			@media (min-width: $screen-md) {
+				grid-column: span 2
+			}
+		}
+		&--1 {
+			@media (min-width: $screen-md) {
+				grid-column: span 1
+			}
+		}
+	}
+}

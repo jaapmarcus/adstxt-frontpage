@@ -1,0 +1,35 @@
+.navigation {
+
+	.menu {
+		display: flex;
+		gap: 50px;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		&__item {
+
+			&--button {
+				.menu__item-link {
+					@extend .button;
+					
+					line-height: normal;
+				}
+			}
+
+			&-link {
+				display: block;
+				font-weight: $font-weight-bold;
+				@include sizing('font-size', 16, 17);
+				line-height: 150px;
+				text-decoration: none;
+				transition: line-height .3s;
+
+				&.is-active {
+					color: $color-secondary;
+				}
+			}
+		}
+	}
+}

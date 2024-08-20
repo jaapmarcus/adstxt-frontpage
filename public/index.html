@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adstxt</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="//necolas.github.io/normalize.css/latest/normalize.css">
+	<link rel="stylesheet" href="assets/build/css/style.css">
+	<link rel="preload" href="assets/fonts/Syne-Regular.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="assets/fonts/Syne-Regular.woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="assets/fonts/Syne-Bold.woff" as="font" crossorigin="anonymous">
+	<link rel="preload" href="assets/fonts/Syne-Bold.woff2" as="font" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+	<style id="site-font" type="text/css">
+		@font-face {
+			font-family: 'Syne';
+			src: url('assets/fonts/Syne-Regular.woff') format('woff'),
+				 url('assets/fonts/Syne-Regular.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+		@font-face {
+			font-family: 'Syne';
+			src: url('assets/fonts/Syne-Bold.woff') format('woff'),
+				 url('assets/fonts/Syne-Bold.woff2') format('woff2');
+			font-weight: bold;
+			font-style: normal;
+			font-display: swap;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+	<body class="site-body">
+		<div class="mobile-menu">
+			<ul class="menu">
+				<li class="menu__item">
+					<a class="menu__item-link is-active" href="#home" aria-label="Home" title="Home">Home</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="#featured" aria-label="Voordelen" title="Voordelen">Voordelen</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="#faq" aria-label="FAQ" title="FAQ">FAQ</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__item-link" href="https://adstxt.nl/register/" aria-label="Aanmelden" title="Aanmelden" target="_blank">Aanmelden</a>
+				</li>
+				<li class="menu__item menu__item--button">
+					<a class="menu__item-link" href="https://adstxt.nl/login/" aria-label="Login" title="Login" target="_blank">Login</a>
+				</li>
+			</ul>
+		</div>
+		<header class="site-header">
+			<div class="container">
+				<div class="site-header__inner">
+					<a class="logo" href="/" aria-label="Home pagina" title="Home pagina">
+						<img class="logo__visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+						<span class="logo__pay-off">Adstxt</span>
+					</a>
+					<nav class="navigation">
+						<ul class="menu">
+							<li class="menu__item">
+								<a class="menu__item-link is-active" href="#home" aria-label="Home" title="Home">Home</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#featured" aria-label="Voordelen" title="Voordelen">Voordelen</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#faq" aria-label="FAQ" title="FAQ">FAQ</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="https://adstxt.nl/register/" aria-label="Aanmelden" title="Aanmelden" target="_blank">Aanmelden</a>
+							</li>
+							<li class="menu__item menu__item--button">
+								<a class="menu__item-link" href="https://adstxt.nl/login/" aria-label="Login" title="Login" target="_blank">Login</a>
+							</li>
+						</ul>
+					</nav>
+					<a class="hamburger js-mobile-menu-toggler" href="#" aria-label="Menu" aria-hidden="false" title="Menu">
+						<span class="hamburger__line"></span>
+						<span class="hamburger__line"></span>
+						<span class="hamburger__line"></span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="smooth-scroll-outer js-smooth-scroll-outer">
+			<div class="smooth-scroll-inner js-smooth-scroll-inner">
+				<main class="site-main">
+					<section id="home" class="hero">
+						<div class="container">
+							<div class="hero__inner">
+								<div class="special-heading">
+									<div class="special-heading__label">
+										<span class="special-heading__label-text">The best in ads</span>
+									</div>
+									<h1 class="special-heading__title">Maximaliseer je <strong>inkomsten</strong> met ads.txt</h1>
+								</div>
+								<div class="text text--large">
+									<p>Haal het maximale uit je advertenties met de eenvoudigste manier om je ads.txt te beheren met  adstxt</p>
+								</div>
+								<div class="button-row">
+									<a class="button" role="button" href="#" aria-label="Bekijk features" title="Bekijk features">
+										<span class="button__text">Bekijk features</span>
+									</a>
+									<a class="button button--bordered" role="button" href="#" aria-label="Bekijk features" title="Bekijk features">
+										<span class="button__text">Bekijk features</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<img class="hero__visual" src="assets/images/background.png" alt="Hero background image">
+					</section>
+					<section id="featured" class="section">
+						<div class="container">
+							<div class="special-heading">
+								<h2 class="special-heading__title">Laat het <strong>verleden</strong> achter je</h2>
+							</div>
+							<div class="feature-slider js-feature-slider">
+								<div class="swiper-wrapper">
+									<div class="feature-slider__item swiper-slide">
+										<div class="feature-slider__item-heading">
+											<img class="feature-slider__item-heading-icon" width="80" height="80" src="assets/images/icon-1.svg" alt="Makkelijk te beheren">
+											<h3 class="feature-slider__item-heading-title">Makkelijk te beheren</h3>
+										</div>
+										<p class="feature-slider__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+									<div class="feature-slider__item swiper-slide">
+										<div class="feature-slider__item-heading">
+											<img class="feature-slider__item-heading-icon" width="80" height="80" src="assets/images/icon-2.svg" alt="Makkelijk te beheren">
+											<h3 class="feature-slider__item-heading-title">Veilige keuze</h3>
+										</div>
+										<p class="feature-slider__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+									<div class="feature-slider__item swiper-slide">
+										<div class="feature-slider__item-heading">
+											<img class="feature-slider__item-heading-icon" width="80" height="80" src="assets/images/icon-3.svg" alt="Makkelijk te beheren">
+											<h3 class="feature-slider__item-heading-title">Alles in eigen beheer</h3>
+										</div>
+										<p class="feature-slider__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+									<div class="feature-slider__item swiper-slide">
+										<div class="feature-slider__item-heading">
+											<img class="feature-slider__item-heading-icon" width="80" height="80" src="assets/images/icon-4.svg" alt="Makkelijk te beheren">
+											<h3 class="feature-slider__item-heading-title">De nummer 1 in ads.txt</h3>
+										</div>
+										<p class="feature-slider__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+									<div class="feature-slider__item swiper-slide">
+										<div class="feature-slider__item-heading">
+											<img class="feature-slider__item-heading-icon" width="80" height="80" src="assets/images/icon-5.svg" alt="Makkelijk te beheren">
+											<h3 class="feature-slider__item-heading-title">Ongelimiteerd werken</h3>
+										</div>
+										<p class="feature-slider__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+									<div class="feature-slider__item swiper-slide">
+										<div class="feature-slider__item-heading">
+											<img class="feature-slider__item-heading-icon" width="80" height="80" src="assets/images/icon-6.svg" alt="Makkelijk te beheren">
+											<h3 class="feature-slider__item-heading-title">Altijd up to date</h3>
+										</div>
+										<p class="feature-slider__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+									</div>
+								</div>
+							</div>
+							<div class="feature-slider__nav">
+								<div class="feature-slider__nav-arrows">
+									<span class="feature-slider__nav-arrows-arrow feature-slider__nav-arrows-arrow--prev js-feature-slider-button-prev">prev</span>
+									<span class="feature-slider__nav-arrows-arrow feature-slider__nav-arrows-arrow--next js-feature-slider-button-next">next</span>
+								</div>
+								<div class="feature-slider__nav-scrollbar js-feature-slider-scrollbar"></div>
+							</div>
+						</div>
+					</section>
+					<section class="section">
+						<div class="container">
+							<div class="css-grid">
+								<div class="css-grid__col css-grid__col--4">
+									<div class="special-heading">
+										<h4 class="special-heading__title">Dit is een titel</h4>
+									</div>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</div>
+								<div class="css-grid__col css-grid__col--4">
+									<div class="special-heading">
+										<h4 class="special-heading__title">Dit is een titel</h4>
+									</div>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</div>
+								<div class="css-grid__col css-grid__col--4">
+									<div class="special-heading">
+										<h4 class="special-heading__title">Dit is een titel</h4>
+									</div>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section">
+						<div class="container">
+							<div class="special-heading">
+								<h2 class="special-heading__title">Waarom je voor <strong>Adstxt</strong> kiest</h2>
+							</div>
+							<div class="css-grid">
+								<div class="css-grid__col css-grid__col--6">
+									<div class="editor">
+										<div class="editor__top">
+											<span class="editor__top-red"></span>
+											<span class="editor__top-orange"></span>
+											<span class="editor__top-green"></span>
+											<span class="editor__top-name">ads.txt</span>
+											<span class="editor__top-label">We turned this pain</span>
+										</div>
+										<div class="editor__content">
+											<div class="editor__content-text"># ads.txt file for Example Website</div>
+											<div class="editor__content-text"># Google Authorized Digital Sellers google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0</div>
+											<div class="editor__content-text"># AppNexus Authorized Sellers appnexus.com, 9876, RESELLER, 1abc234de56f78gh90i123j456k789l0</div>
+											<div class="editor__content-text"># Rubicon Project Authorized Sellers rubiconproject.com, 1234, DIRECT, 0bfd66d529a55807</div>
+											<div class="editor__content-text"># OpenX Authorized Sellers openx.com, 4567, RESELLER, 6d9f9f8300b376b5</div>
+											<div class="editor__content-text"># Index Exchange Authorized Sellers indexexchange.com, 2345, DIRECT, 50b1c356f2c5c8fc</div>
+										</div>
+									</div>
+								</div>
+								<div class="css-grid__col css-grid__col--6">
+									<div class="dashboard">
+										<div class="dashboard__top">
+											<span class="dashboard__top-red"></span>
+											<span class="dashboard__top-orange"></span>
+											<span class="dashboard__top-green"></span>
+											<span class="dashboard__top-name">www.adstxt.nl</span>
+											<span class="dashboard__top-label">Into this beauty</span>
+										</div>
+										<div class="dashboard__header">
+											<img class="dashboard__header-logo" src="assets/images/logo-circle.svg" alt="Adstxt">
+											<div class="dashboard__header-item">Domains</div>
+											<div class="dashboard__header-username">Username</div>
+										</div>
+										<div class="dashboard__title">Domains</div>
+										<div class="dashboard__content">
+											<div class="dashboard__content-block">
+												<table class="dashboard__content-block-table">
+													<thead>
+														<tr>
+															<td>Domain</td>
+															<td>Status</td>
+															<td>Pending</td>
+															<td>Domains</td>
+															<td>Exported</td>
+															<td>Actions</td>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>wiebelter.nl</td>
+															<td>Indexing</td>
+															<td>2</td>
+															<td>3</td>
+															<td>1</td>
+															<td>live</td>
+														</tr>
+														<tr>
+															<td>fullpixel.nl</td>
+															<td>1</td>
+															<td>2</td>
+															<td>33</td>
+															<td>0</td>
+															<td>sync</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="dashboard__content-block">
+												<div class="dashboard__content-block-label">Domain name</div>
+												<input class="dashboard__content-block-input">
+												<div class="dashboard__content-block-button">Save</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section">
+						<div class="container">
+							<div class="special-heading special-heading--center">
+								<p class="special-heading__title">Trusted by teams at</p>
+							</div>
+							<div class="logo-grid">
+								<div class="logo-grid__marquee">
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+								</div>
+								<div class="logo-grid__marquee" aria-hidden="true">
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+									<div class="logo-grid__marquee-item">
+										<img class="logo-grid__marquee-item-visual" width="290" height="90" src="assets/images/logo.svg" alt="Adstxt">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="faq" class="section">
+						<div class="container container--small">
+							<div class="special-heading special-heading--center">
+								<h2 class="special-heading__title">Veelgestelde <strong>vragen</strong></h2>
+							</div>
+							<div class="text text--center">
+								<p>You’ve got questions. We’ve got answers</p>
+							</div>
+							<div class="faq">
+								<details class="faq__item">
+									<summary class="faq__item-heading">
+										<span class="faq__item-heading-title">Wat zijn de kosten voor Adstxt</span>
+										<span class="faq__item-heading-icon" aria-hidden="true"></span>
+									</summary>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__item-heading">
+										<span class="faq__item-heading-title">Waarom is het makkelijk dan ads.txt</span>
+										<span class="faq__item-heading-icon" aria-hidden="true"></span>
+									</summary>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__item-heading">
+										<span class="faq__item-heading-title">Werkt het dashboard makkelijk?</span>
+										<span class="faq__item-heading-icon" aria-hidden="true"></span>
+									</summary>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__item-heading">
+										<span class="faq__item-heading-title">Hoeveel website's kan ik er zetten?</span>
+										<span class="faq__item-heading-icon" aria-hidden="true"></span>
+									</summary>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</details>
+								<details class="faq__item">
+									<summary class="faq__item-heading">
+										<span class="faq__item-heading-title">Moet ik technische kennis hebben voor de koppeling</span>
+										<span class="faq__item-heading-icon" aria-hidden="true"></span>
+									</summary>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</details>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer class="site-footer">
+					<div class="site-footer__inner">
+						<div class="container container--small">
+							<div class="contact-list">
+								<a class="contact-list__item contact-list__item--mail" href="mailto:support@adstxt.nl" aria-label="support@adstxt.nl" title="support@adstxt.nl">support@adstxt.nl</a>
+								<span class="contact-list__item contact-list__item--seperator">Of</span>
+								<a class="contact-list__item contact-list__item--phone" href="tel:+316000000" aria-label="085 555 666" title="085 555 666">085 555 666</a>
+							</div>
+						</div>
+					</div>
+					<div class="site-footer__socket">
+						<div class="container container--small">
+							<div class="copyright">&copy; Adstxt 2024 - Alle rechten voorbehouden</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/vendor/gsap-premium/minified/gsap.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/gsap-premium/minified/ScrollTrigger.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/gsap-premium/minified/ScrollSmoother.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/gsap-premium/minified/ScrollToPlugin.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="assets/build/js/main.min.js"></script>
+
+		<script type="text/javascript">
+			gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+
+			ScrollSmoother.create({
+				wrapper: '.js-smooth-scroll-outer',
+				content: '.js-smooth-scroll-inner',
+				effects: true,
+				smoothness: 0.8
+			});
+
+			const buttons = gsap.utils.toArray(".button");
+
+			buttons.forEach((item) => {
+				let span = item.querySelector("span");
+				let tl = gsap.timeline({ paused: true });
+
+				tl.to(span, { duration: 0.2, yPercent: -150, ease: "power2.in" });
+				tl.set(span, { yPercent: 150 });
+				tl.to(span, { duration: 0.2, yPercent: 0 });
+
+				item.addEventListener("mouseenter", () => tl.play(0));
+			});
+
+			const showAnim = gsap.from('.site-header', {
+				yPercent: -100,
+				paused: true,
+				duration: 0.2
+			}).progress(1);
+
+			ScrollTrigger.create({
+				start: "top top",
+				end: 99999,
+				onUpdate: (self) => {
+				self.direction === -1 ? showAnim.play() : showAnim.reverse()
+				}
+			});
+
+			jQuery('.menu a[href*="#"]').on('click', function (e) {
+				e.preventDefault();
+				var section_id = $(this).attr('href');
+				gsap.to(window, {
+					duration: 2,
+					scrollTo: { y: section_id, offsetY: 50 }
+				});
+			});
+
+			jQuery('section').each(function() {
+				var section = $(this);
+				var sectionId = section.attr('id');
+
+				var startOffset = sectionId === 'home' ? 'top top+=50' : 'top center';
+
+				ScrollTrigger.create({
+					trigger: section,
+					start: startOffset,
+					end: 'bottom center',
+					onEnter: function() {
+						setActiveLink(sectionId);
+					},
+					onEnterBack: function() {
+						setActiveLink(sectionId);
+					}
+				});
+			});
+
+			function setActiveLink(sectionId) {
+				jQuery('.menu a').removeClass('is-active');
+				jQuery('.menu a[href="#' + sectionId + '"]').addClass('is-active');
+			}
+		</script>
+	</body>
+</html>

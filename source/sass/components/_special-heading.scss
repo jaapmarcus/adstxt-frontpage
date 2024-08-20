@@ -1,0 +1,84 @@
+.special-heading {
+	margin: 0 0 2em 0;
+
+	&__label {
+		display: inline-flex;
+		user-select: none;
+		padding: 1px;
+		background: conic-gradient(from calc(var(--rotation-angle) - 80deg) at var(--x-position) 15px, transparent 0, $color-secondary 20%, transparent 25%), lighten($color-primary, 15%);
+		border-radius: 100px;
+		animation: rotation-animation -0.64s linear 3s infinite, slide-animation -0.64s linear 3s infinite;
+		margin: 0 0 1em 0;
+		
+		&-text {
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			height: 30px;
+			padding: 0 20px;
+			background: $color-primary;
+			border-radius: 100px;
+		}
+	}
+
+	&__title {
+		margin: 0;
+
+		strong {
+			color: $color-secondary;
+		}
+	}
+
+	&--center {
+		text-align: center;
+	}
+
+}
+
+@property --rotation-angle {
+	syntax: "<angle>";
+	inherits: false;
+	initial-value: 0deg;
+}
+
+@property --x-position {
+	syntax: "<length>";
+	inherits: false;
+	initial-value: 0;
+}
+
+@keyframes slide-animation {
+	0% {
+		--x-position: 15px;
+	}
+	32.8% {
+		--x-position: 160px;
+	}
+	50% {
+		--x-position: 160px;
+	}
+	82.8% {
+		--x-position: 15px;
+	}
+	100% {
+		--x-position: 15px;
+	}
+}
+
+@keyframes rotation-animation {
+	0% {
+		--rotation-angle: 0deg;
+	}
+	32.8% {
+		--rotation-angle: 0deg;
+	}
+	50% {
+		--rotation-angle: 180deg;
+	}
+	82.8% {
+		--rotation-angle: 180deg;
+	}
+	100% {
+		--rotation-angle: 360deg;
+	}
+}

@@ -1,0 +1,98 @@
+.editor {
+	display: flex;
+	flex-direction: column;
+	border-radius: $border-radius;
+	background: linear-gradient(137deg, $color-primary 4.87%, $color-body 75.88%);
+	border-top: 1px solid hsla(0, 0%, 100%, .06);
+	border-right: 1px solid hsla(0, 0%, 100%, .06);
+	border-left: 1px solid hsla(0, 0%, 100%, .06);
+	box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+	min-height: 100%;
+	position: relative;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		background-image: url('../../images/arrow-left.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 15px;
+		border-radius: 100px;
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		top: auto;
+		left: 50%;
+		transform: translateX(-50%) scaleX(-1) rotate(-90deg);
+		background-color: rgba($color-primary, .2);
+		backdrop-filter: blur(5px);
+		border-top: 1px solid hsla(0, 0%, 100%, .06);
+		border-bottom: 1px solid hsla(0, 0%, 100%, .06);
+		box-shadow: inset -1px 0 0 0 hsla(0, 0%, 100%, .1);
+
+		bottom: 10px;
+		z-index: 99;
+
+		@media (min-width: $screen-md) {
+			top: 50%;
+			left: auto;
+			transform: translateY(-50%) scaleX(-1);
+			right: -90px;
+			bottom: auto;
+			width: 150px;
+			height: 150px;
+			border-top: 1px solid hsla(0, 0%, 100%, .06);
+			border-right: 1px solid hsla(0, 0%, 100%, .06);
+			border-left: 1px solid hsla(0, 0%, 100%, .06);
+			box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .1);
+			background-size: 25px;
+		}
+	}
+
+	&__top {
+		display: flex;
+		gap: 5px;
+		align-items: center;
+		font-size: 80%;
+		color: #fff;
+		opacity: .5;
+		padding: 1em 1.5em;
+		pointer-events: none;
+		user-select: none;
+
+		&-red,
+		&-orange,
+		&-green {
+			border-radius: 100px;
+			width: 8px;
+			height: 8px;
+		}
+
+		&-red {
+			background: #ff3b30;
+		}
+		&-orange {
+			background: #ff9500;
+		}
+		&-green {
+			background: #34c759;
+		}
+
+		&-name {
+			margin: auto;
+		}
+
+		&-label {
+			opacity: .5;
+		}
+	}
+
+	&__content {
+		display: grid;
+		grid-gap: 10px;
+		font-family: monospace, monospace;
+		font-size: 80%;
+		opacity: .5;
+		padding: 1em 1.5em 2.5em 1.5em;
+	}
+}

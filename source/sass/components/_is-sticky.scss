@@ -1,0 +1,7 @@
+.is-sticky {
+	
+	.site-header:before {
+		opacity: 1;
+		transition: opacity .3s;
+	}
+}
